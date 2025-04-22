@@ -1,0 +1,7 @@
+Flask
+tensorflow
+keras
+scikit-learn
+numpy
+Pillow
+Werkzeug

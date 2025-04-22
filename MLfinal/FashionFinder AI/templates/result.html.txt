@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommendations</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        img { margin: 10px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h1>Recommended Styles</h1>
+    <h2>Uploaded Image</h2>
+    <img src="{{ uploaded_image }}" alt="Uploaded Image" width="300">
+    <h2>Similar Items</h2>
+    {% for rec in recommendations %}
+        <img src="{{ rec }}" alt="Recommended Image" width="200">
+    {% endfor %}
+    <p><a href="/">Try Another Image</a></p>
+</body>
+</html>
